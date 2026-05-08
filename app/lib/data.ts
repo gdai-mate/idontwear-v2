@@ -29,6 +29,7 @@ export const products: Product[] = [
       "Button-down collar. Washed until it felt right. The one you reach for when you stop thinking about what to wear.",
     details: "Relaxed fit. Single chest pocket. Coconut shell buttons.",
     materials: "100% organic cotton oxford, 140gsm. Enzyme washed.",
+    image: "/images/editorial-mannequins.jpeg",
   },
   {
     handle: "camp-collar-linen",
@@ -39,6 +40,7 @@ export const products: Product[] = [
       "Open collar, box cut. Linen that wrinkles because it's supposed to.",
     details: "Boxy fit. Camp collar. Side slits at hem.",
     materials: "100% European flax linen, 160gsm.",
+    image: "/images/texture-linen.jpeg",
   },
   {
     handle: "indigo-work-shirt",
@@ -49,6 +51,7 @@ export const products: Product[] = [
       "Based on a 1940s railroad shirt. Triple-stitched seams. Will fade beautifully.",
     details: "Regular fit. Pen slot on left pocket. Chain stitch hem.",
     materials: "Rope-dyed indigo cotton twill, 200gsm.",
+    image: "/images/texture-indigo.jpeg",
   },
   {
     handle: "heavyweight-tee",
@@ -59,6 +62,7 @@ export const products: Product[] = [
       "Tubular knit. No side seams. Thick enough that you forget you're wearing it.",
     details: "Relaxed fit. Ribbed crew neck. Drop shoulder.",
     materials: "100% cotton jersey, 240gsm. Garment dyed.",
+    image: "/images/editorial-hillside-coat.jpeg",
   },
 
   // Pants
@@ -71,6 +75,7 @@ export const products: Product[] = [
       "Military fatigue pattern, civilian comfort. Four pockets, zero pretension.",
     details: "Relaxed taper. Button fly. Adjustable waist tabs.",
     materials: "Washed cotton canvas, 280gsm. Herringbone pocket bags.",
+    image: "/images/editorial-polo-rocks.jpeg",
   },
   {
     handle: "selvedge-straight",
@@ -81,6 +86,7 @@ export const products: Product[] = [
       "Japanese selvedge denim. Straight leg. Raw. They'll become yours in about six months.",
     details: "Straight fit. Five pocket. Hidden selvedge coin pocket.",
     materials: "14oz Japanese selvedge denim. Sanforized.",
+    image: "/images/product-selvedge-folded.jpeg",
   },
   {
     handle: "pleated-trouser",
@@ -91,6 +97,7 @@ export const products: Product[] = [
       "Single pleat. High rise. For when you want to look like you thought about it.",
     details: "High-waisted. Single forward pleat. Side adjusters.",
     materials: "Tropical wool blend, 200gsm. Half-lined.",
+    image: "/images/editorial-river-tweed.jpeg",
   },
 
   // Bags
@@ -115,6 +122,7 @@ export const products: Product[] = [
       "Originally designed for chisels. Works for pens, brushes, whatever you carry. Rolls up, ties shut.",
     details: "Six slots. Leather tie closure. Brass eyelets.",
     materials: "Heavy cotton duck canvas. Bridle leather tie.",
+    image: "/images/editorial-puffer-vintage.jpeg",
   },
 
   // Accessories
@@ -127,6 +135,7 @@ export const products: Product[] = [
       "Merino wool. Ribbed knit. Fits heads, not egos.",
     details: "One size. Fold-up brim. Tonal logo tag.",
     materials: "100% extra-fine merino wool. Knitted in Melbourne.",
+    image: "/images/editorial-mountain-scarf.jpeg",
   },
   {
     handle: "brass-key-hook",
@@ -137,6 +146,7 @@ export const products: Product[] = [
       "Solid brass. Japanese hook closure. Will develop a patina that's yours alone.",
     details: "Spring-loaded hook. Belt loop attachment. 8cm length.",
     materials: "Solid brass, sand-cast. Hand-polished.",
+    image: "/images/product-canvas-tote.jpeg",
   },
 ];
 

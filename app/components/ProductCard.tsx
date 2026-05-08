@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import type { Product } from "~/lib/data";
 import { placeholderColors } from "~/lib/data";
 
@@ -14,21 +14,25 @@ const hoverTags = [
   "into it.",
 ];
 
+// Deterministic hash from string so server and client match
+function hashCode(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
 export function ProductCard({ product }: { product: Product }) {
   const [hovered, setHovered] = useState(false);
 
-  const tag = useMemo(
-    () => hoverTags[Math.floor(Math.random() * hoverTags.length)],
-    []
-  );
-
-  const tagPos = useMemo(
-    () => ({
-      top: `${20 + Math.random() * 40}%`,
-      left: `${10 + Math.random() * 50}%`,
-    }),
-    []
-  );
+  const hash = hashCode(product.handle);
+  const tag = hoverTags[hash % hoverTags.length];
+  const tagPos = {
+    top: `${20 + (hash % 41)}%`,
+    left: `${10 + ((hash >> 8) % 51)}%`,
+  };
 
   return (
     <Link

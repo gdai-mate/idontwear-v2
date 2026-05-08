@@ -42,7 +42,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-idw-white font-sans text-idw-black antialiased">
+      <body className="bg-idw-white font-sans text-idw-black antialiased" suppressHydrationWarning>
         <GrainOverlay />
         <Outlet />
         <ScrollRestoration />

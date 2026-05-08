@@ -15,13 +15,13 @@ export default function About() {
     <div>
       {/* Hero band */}
       <section className="relative pt-24">
-        <div
-          className="h-[50vh] w-full md:h-[60vh]"
-          style={{
-            background:
-              "linear-gradient(180deg, #2C3E5A 0%, #1a1a2e 50%, #4A4A48 100%)",
-          }}
-        />
+        <div className="h-[50vh] w-full overflow-hidden bg-idw-graphite md:h-[60vh]">
+          <img
+            src="/images/editorial-overcoat-field.jpeg"
+            alt="Overcoat in field"
+            className="h-full w-full object-cover object-center"
+          />
+        </div>
       </section>
 
       {/* Main copy */}
@@ -65,6 +65,22 @@ export default function About() {
         </div>
       </section>
 
+      {/* Editorial moment */}
+      <section className="px-gutter pb-section">
+        <div className="mx-auto max-w-content">
+          <AnimateIn>
+            <div className="mx-auto max-w-3xl overflow-hidden">
+              <img
+                src="/images/editorial-couple-tweed.jpeg"
+                alt="Tweed and houndstooth"
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </AnimateIn>
+        </div>
+      </section>
+
       {/* Quote band */}
       <section className="bg-idw-black px-gutter py-section text-idw-white">
         <AnimateIn className="mx-auto max-w-content text-center">
@@ -102,13 +118,52 @@ export default function About() {
             </AnimateIn>
 
             <AnimateIn className="order-1 md:order-2" delay={150}>
-              <div
-                className="aspect-square w-full"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #8B6F47 0%, #6B5D4C 50%, #4A4A48 100%)",
-                }}
-              />
+              <div className="aspect-square w-full overflow-hidden bg-idw-sand">
+                <img
+                  src="/images/editorial-newspaper.jpeg"
+                  alt="Reading the paper"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </AnimateIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Process images strip */}
+      <section className="px-gutter pb-section">
+        <div className="mx-auto max-w-content">
+          <div className="grid grid-cols-3 gap-3 md:gap-4">
+            <AnimateIn>
+              <div className="aspect-[4/5] w-full overflow-hidden bg-idw-clay">
+                <img
+                  src="/images/process-fabric-rolls.jpeg"
+                  alt="Fabric rolls"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </AnimateIn>
+            <AnimateIn delay={100}>
+              <div className="aspect-[4/5] w-full overflow-hidden bg-idw-graphite">
+                <img
+                  src="/images/process-tailoring.jpeg"
+                  alt="Tailoring scissors and patterns"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </AnimateIn>
+            <AnimateIn delay={200}>
+              <div className="aspect-[4/5] w-full overflow-hidden bg-idw-sand">
+                <img
+                  src="/images/process-pattern-marking.jpeg"
+                  alt="Marking a pattern"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </AnimateIn>
           </div>
         </div>

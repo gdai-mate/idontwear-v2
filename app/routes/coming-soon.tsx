@@ -8,15 +8,16 @@ export const meta: MetaFunction = () => [
 
 export default function ComingSoon() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center px-gutter">
-      {/* Subtle background lines */}
-      <div
-        className="pointer-events-none fixed inset-0 -z-10 opacity-[0.025]"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(0deg, transparent, transparent 120px, rgba(12,12,12,0.15) 120px, rgba(12,12,12,0.15) 121px)",
-        }}
-      />
+    <div className="relative flex min-h-svh flex-col items-center justify-center px-gutter">
+      {/* Background image */}
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <img
+          src="/images/texture-dark-indigo.jpeg"
+          alt=""
+          className="h-full w-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-idw-white/80" />
+      </div>
 
       <div className="w-full max-w-md text-center">
         {/* Brand mark */}

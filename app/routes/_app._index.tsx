@@ -3,6 +3,21 @@ import { products } from "~/lib/data";
 import { ProductCard } from "~/components/ProductCard";
 import { AnimateIn } from "~/components/AnimateIn";
 
+const gallery = [
+  { src: "/images/editorial-denim-stack.jpeg", alt: "Denim shirts" },
+  { src: "/images/editorial-overcoat-bw-hires.jpeg", alt: "Classic tailoring" },
+  { src: "/images/lifestyle-mrporter.jpeg", alt: "Morning reading" },
+  { src: "/images/editorial-nyc-70s.jpeg", alt: "New York, 1970s" },
+  { src: "/images/editorial-hillside-coat.jpeg", alt: "Walking the hills" },
+  { src: "/images/accent-taste.jpeg", alt: "" },
+  { src: "/images/texture-dark-indigo.jpeg", alt: "Indigo texture" },
+  { src: "/images/editorial-newspaper.jpeg", alt: "Reading the paper" },
+  { src: "/images/editorial-couple-tweed.jpeg", alt: "Tweed and houndstooth" },
+  { src: "/images/process-tailoring.jpeg", alt: "Pattern cutting" },
+  { src: "/images/process-fabric-rolls.jpeg", alt: "Fabric rolls" },
+  { src: "/images/editorial-nyc-market.jpeg", alt: "Garment market" },
+];
+
 export default function Home() {
   const featured = [
     products.find((p) => p.handle === "waxed-canvas-tote")!,
@@ -13,26 +28,19 @@ export default function Home() {
   return (
     <>
       {/* ---- Hero ---- */}
-      <section className="relative flex h-svh items-end">
-        {/* Background with moody gradient */}
-        <div
-          className="absolute inset-0 -z-10"
-          style={{
-            background:
-              "linear-gradient(160deg, #1a1a2e 0%, #16213e 35%, #0f3460 65%, #0C0C0C 100%)",
-          }}
-        />
+      <section className="relative flex h-svh items-end overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/editorial-overcoat-field.jpeg"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-idw-black/60 via-idw-black/15 to-transparent" />
+        </div>
 
-        {/* Subtle texture lines */}
-        <div
-          className="absolute inset-0 -z-10 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,0.1) 80px, rgba(255,255,255,0.1) 81px)",
-          }}
-        />
-
-        <div className="w-full px-gutter pb-12 md:pb-16">
+        {/* Content */}
+        <div className="relative z-10 w-full px-gutter pb-12 md:pb-16">
           <div className="mx-auto max-w-content">
             <h1 className="font-serif text-display text-idw-white">
               idontwear
@@ -44,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2">
           <div className="h-8 w-px animate-pulse bg-idw-white/20" />
         </div>
       </section>
@@ -54,13 +62,14 @@ export default function Home() {
         <div className="mx-auto max-w-content">
           <div className="grid gap-8 md:grid-cols-5 md:gap-12">
             <AnimateIn className="md:col-span-3">
-              <div
-                className="aspect-[4/5] w-full"
-                style={{
-                  background:
-                    "linear-gradient(180deg, #E8DFD0 0%, #C4B9A8 60%, #A09B93 100%)",
-                }}
-              />
+              <div className="aspect-[4/5] w-full overflow-hidden bg-idw-linen">
+                <img
+                  src="/images/editorial-garden.jpeg"
+                  alt="Workwear in the garden"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </AnimateIn>
 
             <AnimateIn
@@ -119,21 +128,23 @@ export default function Home() {
         </AnimateIn>
       </section>
 
-      {/* ---- Editorial Strip ---- */}
+      {/* ---- Gallery Feed ---- */}
       <section className="px-gutter py-section">
         <div className="mx-auto max-w-content">
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-            {[
-              { bg: "#2C3E5A", aspect: "aspect-[3/4]" },
-              { bg: "#8B6F47", aspect: "aspect-square" },
-              { bg: "#C4B9A8", aspect: "aspect-square" },
-              { bg: "#4A4A48", aspect: "aspect-[3/4]" },
-            ].map((block, i) => (
-              <AnimateIn key={i} delay={i * 100}>
-                <div
-                  className={`${block.aspect} w-full`}
-                  style={{ backgroundColor: block.bg }}
-                />
+          <div
+            className="columns-2 md:columns-3"
+            style={{ columnGap: "clamp(12px, 2vw, 20px)" }}
+          >
+            {gallery.map((img, i) => (
+              <AnimateIn key={i} delay={Math.min(i * 80, 400)}>
+                <div className="mb-3 break-inside-avoid overflow-hidden md:mb-5">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full object-cover transition-transform duration-700 ease-smooth hover:scale-[1.02]"
+                  />
+                </div>
               </AnimateIn>
             ))}
           </div>

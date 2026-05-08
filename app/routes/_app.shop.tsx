@@ -19,8 +19,17 @@ export default function Shop() {
       : products.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="px-gutter pb-section pt-32 md:pt-40">
-      <div className="mx-auto max-w-content">
+    <div className="pb-section">
+      {/* Shop hero */}
+      <div className="mb-12 h-[35vh] w-full overflow-hidden bg-idw-stone pt-24 md:mb-16 md:h-[40vh]">
+        <img
+          src="/images/editorial-nyc-market.jpeg"
+          alt="Garment market"
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
+
+      <div className="mx-auto max-w-content px-gutter">
         {/* Page title */}
         <AnimateIn>
           <h1 className="font-serif text-heading mb-12 md:mb-16">Shop</h1>
