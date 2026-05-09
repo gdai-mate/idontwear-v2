@@ -38,27 +38,30 @@ export default function About() {
           <AnimateIn delay={100}>
             <div className="space-y-6 text-sm leading-[1.8] opacity-70">
               <p>
-                We started idontwear because we were tired of clothes that tried
-                to be something. Clothes that wanted to tell you who you are.
-                Clothes that came with a manifesto and a mood board and a
-                carefully selected Spotify playlist.
+                Most clothing brands begin with a mood board and work backwards
+                to a product. We started with the product. Specifically, with
+                the question of why a railroad worker&apos;s shirt from 1943
+                feels better to wear than most things designed this year.
               </p>
               <p>
-                We just wanted to make things you&apos;d actually wear. Things
-                that fit properly, felt good, and got out of the way. Things that
-                became better the more you lived in them.
+                The answer, we think, has to do with function. When a garment is
+                designed to actually do something, to keep out rain or survive a
+                twelve-hour shift or move with the body rather than against it,
+                the result tends to be more honest. The proportions make sense.
+                The materials justify themselves. Nothing is there for
+                decoration&apos;s sake.
               </p>
               <p>
-                Every piece we make starts with a functional silhouette. Workwear,
-                outdoorswear, tailoring. Shapes that were designed for doing
-                things, not just looking like you might. We pull techniques and
-                context from different cultures around the world, because good
-                ideas don&apos;t respect borders.
+                We build around these functional silhouettes. Workwear,
+                outdoorswear, military surplus, tailoring. Then we pull techniques
+                and context from different cultures, because a Japanese approach
+                to dyeing indigo or an Italian understanding of drape aren&apos;t
+                proprietary ideas. Good knowledge travels.
               </p>
               <p>
-                The result is clothes that don&apos;t need a story. They
-                don&apos;t need to be explained. You put them on and they feel
-                right. That&apos;s it.
+                The clothes don&apos;t come with a story. They don&apos;t need
+                one. You put them on and they either feel right or they
+                don&apos;t. That&apos;s the whole test.
               </p>
             </div>
           </AnimateIn>
@@ -104,15 +107,16 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-sm leading-[1.8] opacity-70">
                 <p>
-                  We work with natural materials because they age honestly. Waxed
-                  cotton develops character. Raw denim fades to match your body.
-                  Linen wrinkles because it&apos;s supposed to. These aren&apos;t
-                  flaws. They&apos;re features.
+                  We work with natural materials because synthetic alternatives
+                  tend to solve problems that don&apos;t exist. Waxed cotton
+                  develops character. Raw denim fades to record your specific
+                  habits. Linen wrinkles, which is a feature, not a defect.
                 </p>
                 <p>
-                  Every seam, every rivet, every button is there because it needs
-                  to be. Nothing decorative. Nothing for show. Just the right
-                  materials put together the right way.
+                  The Japanese have a word for this sort of thing. You don&apos;t
+                  need to know it to appreciate the principle: things that age
+                  honestly are more interesting than things that try not to age
+                  at all.
                 </p>
               </div>
             </AnimateIn>
@@ -177,25 +181,27 @@ export default function About() {
               <div>
                 <h3 className="font-serif text-xl mb-3">Human</h3>
                 <p className="text-sm leading-relaxed opacity-60">
-                  Clothes exist because people exist. We never lose sight of the
-                  person inside them. Everything we make starts with how it
-                  feels, not how it looks in a flat lay.
+                  A flat lay on a marble countertop tells you nothing about how
+                  a shirt feels against your skin at 2pm on a Tuesday.
+                  Everything we make starts with the person who&apos;ll wear it,
+                  not the camera that&apos;ll photograph it.
                 </p>
               </div>
               <div>
                 <h3 className="font-serif text-xl mb-3">Researched</h3>
                 <p className="text-sm leading-relaxed opacity-60">
-                  We study the construction methods and cultural contexts behind
-                  functional clothing from around the world. Not to copy, but to
-                  understand why things were made the way they were.
+                  We study the construction methods behind functional clothing
+                  from around the world. Not to copy, but to understand why a
+                  chore jacket from Lyon and a noragi from Kyoto arrived at
+                  similar solutions independently.
                 </p>
               </div>
               <div>
                 <h3 className="font-serif text-xl mb-3">Quality</h3>
                 <p className="text-sm leading-relaxed opacity-60">
-                  Not a marketing word. A material fact. Better fabrics, better
-                  construction, better fit. Clothes that last longer than the
-                  season they were made in.
+                  Not a marketing word. A material fact. We use better fabrics,
+                  more considered construction, and more honest sizing. The
+                  kind of clothes you stop replacing every eighteen months.
                 </p>
               </div>
             </div>

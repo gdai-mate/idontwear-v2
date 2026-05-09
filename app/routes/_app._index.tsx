@@ -80,10 +80,10 @@ export default function Home() {
                 The most beautiful aspect of clothing is the person wearing them.
               </p>
               <p className="mt-6 text-sm leading-relaxed opacity-60">
-                Built around the functional silhouettes of workwear, outdoorswear,
-                and tailoring. Every piece draws from techniques and contexts
-                across cultures, made to become part of your day, not a costume
-                for it.
+                We build around the functional silhouettes of workwear,
+                outdoorswear, and tailoring, then pull techniques from different
+                cultures because good ideas have never respected borders. The
+                goal is clothes that become part of your day, not a costume for it.
               </p>
             </AnimateIn>
           </div>

@@ -26,7 +26,7 @@ export const products: Product[] = [
     category: "shirts",
     price: 145,
     description:
-      "Button-down collar. Washed until it felt right. The one you reach for when you stop thinking about what to wear.",
+      "The collar rolls without being told to. We enzyme-washed the cloth until it stopped feeling new, which took longer than you'd think. This is the shirt that ends up on top of the pile because you keep reaching for it.",
     details: "Relaxed fit. Single chest pocket. Coconut shell buttons.",
     materials: "100% organic cotton oxford, 140gsm. Enzyme washed.",
     image: "/images/editorial-mannequins.jpeg",
@@ -37,7 +37,7 @@ export const products: Product[] = [
     category: "shirts",
     price: 165,
     description:
-      "Open collar, box cut. Linen that wrinkles because it's supposed to.",
+      "Box cut with an open collar borrowed from 1950s Havana bowling leagues. European flax linen that wrinkles within the hour. People who iron these are missing the point entirely.",
     details: "Boxy fit. Camp collar. Side slits at hem.",
     materials: "100% European flax linen, 160gsm.",
     image: "/images/texture-linen.jpeg",
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: "shirts",
     price: 175,
     description:
-      "Based on a 1940s railroad shirt. Triple-stitched seams. Will fade beautifully.",
+      "The pattern comes from a 1940s railroad shirt. Triple-stitched seams because the original was built to survive manual labour, not just reference it. The rope-dyed indigo will fade to match your particular life.",
     details: "Regular fit. Pen slot on left pocket. Chain stitch hem.",
     materials: "Rope-dyed indigo cotton twill, 200gsm.",
     image: "/images/texture-indigo.jpeg",
@@ -59,7 +59,7 @@ export const products: Product[] = [
     category: "shirts",
     price: 75,
     description:
-      "Tubular knit. No side seams. Thick enough that you forget you're wearing it.",
+      "Tubular knit on vintage circular machines, which means no side seams to bunch up under a jacket. At 240 grams, it's heavy enough to hang properly but not so heavy you notice it. The kind of shirt that quietly becomes your favourite.",
     details: "Relaxed fit. Ribbed crew neck. Drop shoulder.",
     materials: "100% cotton jersey, 240gsm. Garment dyed.",
     image: "/images/editorial-hillside-coat.jpeg",
@@ -72,7 +72,7 @@ export const products: Product[] = [
     category: "pants",
     price: 185,
     description:
-      "Military fatigue pattern, civilian comfort. Four pockets, zero pretension.",
+      "Based on the US Army's OG-107 fatigue trousers, standard issue from Korea through Vietnam. We kept the relaxed taper and utility pockets but swapped the rigid twill for a washed canvas that feels already broken in. Button fly, because zippers on fatigues are historically inaccurate.",
     details: "Relaxed taper. Button fly. Adjustable waist tabs.",
     materials: "Washed cotton canvas, 280gsm. Herringbone pocket bags.",
     image: "/images/editorial-polo-rocks.jpeg",
@@ -83,7 +83,7 @@ export const products: Product[] = [
     category: "pants",
     price: 220,
     description:
-      "Japanese selvedge denim. Straight leg. Raw. They'll become yours in about six months.",
+      "Fourteen-ounce selvedge from a mill in Okayama that's been weaving denim on vintage shuttle looms since the 1970s. The cloth is raw, meaning unwashed and untreated, so it will slowly conform to your body over the first six months. The fades you get will be entirely yours.",
     details: "Straight fit. Five pocket. Hidden selvedge coin pocket.",
     materials: "14oz Japanese selvedge denim. Sanforized.",
     image: "/images/product-selvedge-folded.jpeg",
@@ -94,7 +94,7 @@ export const products: Product[] = [
     category: "pants",
     price: 195,
     description:
-      "Single pleat. High rise. For when you want to look like you thought about it.",
+      "A single forward pleat in tropical wool, cut high enough on the waist that you don't need a belt to keep them up. Side adjusters instead. These are for people who've realised that flat-front chinos aren't actually more flattering, just more common.",
     details: "High-waisted. Single forward pleat. Side adjusters.",
     materials: "Tropical wool blend, 200gsm. Half-lined.",
     image: "/images/editorial-river-tweed.jpeg",
@@ -107,7 +107,7 @@ export const products: Product[] = [
     category: "bags",
     price: 145,
     description:
-      "Waxed canvas. Brass rivets. Leather handles that'll outlast you. Fits everything, complains about nothing.",
+      "British Millerain waxed cotton, from a Lancashire mill that's been at it since 1880. Leather handles cut from vegetable-tanned hides that will darken with use. The bag doesn't have compartments or organiser pockets because we trust you to figure out where your keys are.",
     details: "Unlined. Interior slip pocket. Rivet-reinforced stress points.",
     materials:
       "British Millerain waxed cotton. Vegetable-tanned leather handles.",
@@ -119,7 +119,7 @@ export const products: Product[] = [
     category: "bags",
     price: 95,
     description:
-      "Originally designed for chisels. Works for pens, brushes, whatever you carry. Rolls up, ties shut.",
+      "Six slots, originally sized for woodworking chisels, though they work just as well for pens, brushes, or whatever you need to carry in a civilised manner. Rolls up and ties shut with a single leather cord. No zipper, no Velcro, no nonsense.",
     details: "Six slots. Leather tie closure. Brass eyelets.",
     materials: "Heavy cotton duck canvas. Bridle leather tie.",
     image: "/images/editorial-puffer-vintage.jpeg",
@@ -132,7 +132,7 @@ export const products: Product[] = [
     category: "accessories",
     price: 55,
     description:
-      "Merino wool. Ribbed knit. Fits heads, not egos.",
+      "Extra-fine merino, rib-knitted in Melbourne by a family operation that's been making knitwear since the 1960s. The fit is snug without making you look like you're about to rob a petrol station. Fold the brim to taste.",
     details: "One size. Fold-up brim. Tonal logo tag.",
     materials: "100% extra-fine merino wool. Knitted in Melbourne.",
     image: "/images/editorial-mountain-scarf.jpeg",
@@ -143,7 +143,7 @@ export const products: Product[] = [
     category: "accessories",
     price: 35,
     description:
-      "Solid brass. Japanese hook closure. Will develop a patina that's yours alone.",
+      "Sand-cast brass with a Japanese spring-loaded hook that clips onto a belt loop. The brass will tarnish and develop a patina over time, which is the point. If you want something that stays shiny, buy something plated.",
     details: "Spring-loaded hook. Belt loop attachment. 8cm length.",
     materials: "Solid brass, sand-cast. Hand-polished.",
     image: "/images/product-canvas-tote.jpeg",
