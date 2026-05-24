@@ -23,8 +23,8 @@ export default function Shop() {
       {/* Shop hero */}
       <div className="mb-12 h-[35vh] w-full overflow-hidden bg-idw-stone pt-24 md:mb-16 md:h-[40vh]">
         <img
-          src="/images/editorial-nyc-market.jpeg"
-          alt="Garment market"
+          src="/images/shoot/bags-collection.jpg"
+          alt="The collection"
           className="h-full w-full object-cover object-center"
         />
       </div>

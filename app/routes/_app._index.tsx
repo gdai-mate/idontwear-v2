@@ -4,25 +4,27 @@ import { ProductCard } from "~/components/ProductCard";
 import { AnimateIn } from "~/components/AnimateIn";
 
 const gallery = [
+  { src: "/images/shoot/jacket-closeup.jpg", alt: "Stand collar jacket detail" },
   { src: "/images/editorial-denim-stack.jpeg", alt: "Denim shirts" },
-  { src: "/images/editorial-overcoat-bw-hires.jpeg", alt: "Classic tailoring" },
-  { src: "/images/lifestyle-mrporter.jpeg", alt: "Morning reading" },
-  { src: "/images/editorial-nyc-70s.jpeg", alt: "New York, 1970s" },
+  { src: "/images/shoot/sailbag-product-held.jpg", alt: "Sailcloth tote" },
+  { src: "/images/shoot/pants-back-pocket-detail.jpg", alt: "Back pocket stitching" },
   { src: "/images/editorial-hillside-coat.jpeg", alt: "Walking the hills" },
-  { src: "/images/accent-taste.jpeg", alt: "" },
-  { src: "/images/texture-dark-indigo.jpeg", alt: "Indigo texture" },
-  { src: "/images/editorial-newspaper.jpeg", alt: "Reading the paper" },
-  { src: "/images/editorial-couple-tweed.jpeg", alt: "Tweed and houndstooth" },
+  { src: "/images/shoot/weathered-tote-profile.jpg", alt: "Weathered canvas tote" },
+  { src: "/images/shoot/jacket-waist-detail.jpg", alt: "Jacket waist construction" },
+  { src: "/images/editorial-nyc-70s.jpeg", alt: "New York, 1970s" },
+  { src: "/images/shoot/pocket-stitch-detail.jpg", alt: "Pocket detail" },
+  { src: "/images/shoot/branding-detail.jpg", alt: "/dontwear. stamp" },
   { src: "/images/process-tailoring.jpeg", alt: "Pattern cutting" },
-  { src: "/images/process-fabric-rolls.jpeg", alt: "Fabric rolls" },
-  { src: "/images/editorial-nyc-market.jpeg", alt: "Garment market" },
+  { src: "/images/shoot/sailbag-front-hung.jpg", alt: "Sailcloth tote front" },
+  { src: "/images/editorial-newspaper.jpeg", alt: "Reading the paper" },
+  { src: "/images/shoot/waist-tie-detail.jpg", alt: "Waist tie detail" },
 ];
 
 export default function Home() {
   const featured = [
-    products.find((p) => p.handle === "waxed-canvas-tote")!,
-    products.find((p) => p.handle === "indigo-work-shirt")!,
-    products.find((p) => p.handle === "canvas-fatigue")!,
+    products.find((p) => p.handle === "sailcloth-tote")!,
+    products.find((p) => p.handle === "stand-collar-jacket")!,
+    products.find((p) => p.handle === "wide-leg-trouser")!,
   ];
 
   return (

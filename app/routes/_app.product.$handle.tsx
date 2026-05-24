@@ -60,28 +60,47 @@ export default function ProductDetail() {
         {/* Product layout */}
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           {/* Image column */}
-          <AnimateIn>
-            <div className="img-grain aspect-[3/4] overflow-hidden bg-idw-linen">
-              {product.image ? (
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="h-full w-full object-cover"
-                />
-              ) : (
-                <div
-                  className="h-full w-full"
-                  style={{
-                    backgroundColor:
-                      placeholderColors[product.handle] || "#E8DFD0",
-                  }}
-                />
-              )}
-            </div>
-          </AnimateIn>
+          <div>
+            {(product.images && product.images.length > 1) ? (
+              <div className="space-y-3">
+                {product.images.map((src, i) => (
+                  <AnimateIn key={src} delay={Math.min(i * 100, 400)}>
+                    <div className="img-grain aspect-[3/4] overflow-hidden bg-idw-linen">
+                      <img
+                        src={src}
+                        alt={`${product.name} - ${i + 1}`}
+                        loading={i === 0 ? "eager" : "lazy"}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </AnimateIn>
+                ))}
+              </div>
+            ) : (
+              <AnimateIn>
+                <div className="img-grain aspect-[3/4] overflow-hidden bg-idw-linen">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <div
+                      className="h-full w-full"
+                      style={{
+                        backgroundColor:
+                          placeholderColors[product.handle] || "#E8DFD0",
+                      }}
+                    />
+                  )}
+                </div>
+              </AnimateIn>
+            )}
+          </div>
 
           {/* Details column */}
-          <AnimateIn delay={150} className="flex flex-col justify-center">
+          <AnimateIn delay={150} className="lg:sticky lg:top-28 lg:self-start">
             <div>
               <p className="text-subheading mb-3 uppercase tracking-widest opacity-40">
                 {product.category}
