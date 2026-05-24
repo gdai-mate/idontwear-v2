@@ -17,8 +17,8 @@ export default function About() {
       <section className="relative pt-24">
         <div className="h-[50vh] w-full overflow-hidden bg-idw-graphite md:h-[60vh]">
           <img
-            src="/images/shoot/jacket-portrait.jpg"
-            alt="Stand collar jacket"
+            src="/images/editorial-overcoat-field.jpeg"
+            alt="Overcoat in field"
             className="h-full w-full object-cover object-center"
           />
         </div>
@@ -74,8 +74,8 @@ export default function About() {
           <AnimateIn>
             <div className="mx-auto max-w-3xl overflow-hidden">
               <img
-                src="/images/shoot/sailbag-held-full.jpg"
-                alt="Sailcloth tote over shoulder"
+                src="/images/editorial-couple-tweed.jpeg"
+                alt="Tweed and houndstooth"
                 loading="lazy"
                 className="h-full w-full object-cover"
               />
@@ -124,8 +124,8 @@ export default function About() {
             <AnimateIn className="order-1 md:order-2" delay={150}>
               <div className="aspect-square w-full overflow-hidden bg-idw-sand">
                 <img
-                  src="/images/shoot/weathered-tote-held.jpg"
-                  alt="Weathered canvas tote"
+                  src="/images/editorial-newspaper.jpeg"
+                  alt="Reading the paper"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
@@ -142,8 +142,8 @@ export default function About() {
             <AnimateIn>
               <div className="aspect-[4/5] w-full overflow-hidden bg-idw-clay">
                 <img
-                  src="/images/shoot/pocket-stitch-detail.jpg"
-                  alt="Pocket stitch detail"
+                  src="/images/process-fabric-rolls.jpeg"
+                  alt="Fabric rolls"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
@@ -152,8 +152,8 @@ export default function About() {
             <AnimateIn delay={100}>
               <div className="aspect-[4/5] w-full overflow-hidden bg-idw-graphite">
                 <img
-                  src="/images/shoot/jacket-waist-detail.jpg"
-                  alt="Jacket construction detail"
+                  src="/images/shoot/sailbag-profile-carry.jpg"
+                  alt="Sailcloth tote on shoulder"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
@@ -162,8 +162,8 @@ export default function About() {
             <AnimateIn delay={200}>
               <div className="aspect-[4/5] w-full overflow-hidden bg-idw-sand">
                 <img
-                  src="/images/shoot/branding-detail.jpg"
-                  alt="/dontwear. branding"
+                  src="/images/shoot/weathered-tote-texture.jpg"
+                  alt="Weathered canvas detail"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
